@@ -150,6 +150,7 @@
             this.btnHideShowPass.FadeWhenInactive = false;
             this.btnHideShowPass.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.btnHideShowPass.Image = global::HouseRentManagement.Properties.Resources.btnHidePassword;
+            this.btnHideShowPass.ImageActive = global::HouseRentManagement.Properties.Resources.btnShowPassword;
             this.btnHideShowPass.ImageLocation = null;
             this.btnHideShowPass.ImageMargin = 0;
             this.btnHideShowPass.ImageSize = new System.Drawing.Size(20, 20);
@@ -166,7 +167,9 @@
             this.btnHideShowPass.TabIndex = 11;
             this.btnHideShowPass.ToolTipText = "";
             this.btnHideShowPass.WaitOnLoad = false;
+            this.btnHideShowPass.Zoom = 0;
             this.btnHideShowPass.ZoomSpeed = 10;
+            this.btnHideShowPass.Click += new System.EventHandler(this.btnHideShowPass_Click);
             // 
             // btnClose
             // 
@@ -218,6 +221,7 @@
             this.btnReset.Size = new System.Drawing.Size(87, 40);
             this.btnReset.TabIndex = 9;
             this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnLogin
             // 
@@ -318,6 +322,7 @@
             this.txtBoxPassword.TextPlaceholder = "Enter your password";
             this.txtBoxPassword.UseSystemPasswordChar = false;
             this.txtBoxPassword.WordWrap = true;
+            this.txtBoxPassword.TextChange += new System.EventHandler(this.txtBoxPassword_TextChange);
             // 
             // txtBoxUsername
             // 
