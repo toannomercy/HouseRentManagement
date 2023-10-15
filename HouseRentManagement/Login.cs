@@ -1,33 +1,34 @@
 ﻿using DevExpress.XtraEditors;
+using HouseRentManagement.HRMcontextDB;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.Entity;
-using System.Data.SqlClient;
-using System.Drawing;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Drawing;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace HouseRentManagement
 {
-    public partial class Login : DevExpress.XtraEditors.XtraForm
+    public partial class Login : XtraForm
     {
         private bool isDragging = false;
         private Point startPoint;
-        private string connectionString = @"Data Source=TOAN-PC\ASVSERVER;Initial Catalog=QLCHCC;Integrated Security=True";
-        private SqlConnection conn; 
-
+        private bool isPasswordMasked = true;
+        private HRMContextDB context;
+        private string connString = ConfigurationManager.ConnectionStrings["HRMContextDB"].ConnectionString;
+        
         public Login()
         {
             InitializeComponent();
-            conn = new SqlConnection(connectionString);
+            InitializeUI();
+            context = new HRMContextDB();
         }
 
+        private void InitializeUI()
+        {
+            btnHideShowPass.HoverState.ImageSize = new System.Drawing.Size(20, 20);
+            btnHideShowPass.PressedState.ImageSize = new System.Drawing.Size(20, 20);
+        }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -36,52 +37,63 @@ namespace HouseRentManagement
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            try
+            string username = txtBoxUsername.Text;
+            string password = txtBoxPassword.Text;
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                string enteredUsername = txtBoxUsername.Text;
-                string enteredPassword = txtBoxPassword.Text;
-                string queryUser = "SELECT MatKhau FROM USERS WHERE MaTheCuDan = @username";
-                string queryAdmin = "SELECT MatKhau FROM ADMINS WHERE MaQL = @username";
-                SqlCommand cmdUser = new SqlCommand(queryUser, conn);
-                SqlCommand cmdAdmin = new SqlCommand(queryAdmin, conn);
-                cmdUser.Parameters.AddWithValue("username", enteredUsername);
-                cmdAdmin.Parameters.AddWithValue("username", enteredUsername);
-                conn.Open();
-                string realPasswordUser = (string)cmdUser.ExecuteScalar();
-                string realPasswordAdmin = (string)cmdAdmin.ExecuteScalar();
-                conn.Close();
-                if (realPasswordAdmin != null)
+                MessageBox.Show("Please enter both username and password", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string adminSelectQuery = "SELECT * FROM ADMINS WHERE MaQL = @username AND MatKhau = @password";
+            string userSelectQuery = "SELECT * FROM USERS WHERE MaTheCuDan = @username AND MatKhau = @password";
+
+            using (SqlConnection connection = new SqlConnection(connString))
+            using (SqlCommand command = new SqlCommand(adminSelectQuery, connection))
+            {
+                command.Parameters.AddWithValue("@username", username);
+                command.Parameters.AddWithValue("@password", password);
+                connection.Open();
+                using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    if(enteredPassword == realPasswordAdmin)
+                    if (reader.HasRows)
                     {
-                        Admin adminForm = new Admin();
+                        Admin adminForm = new Admin(username);
                         adminForm.Show();
                         this.Hide();
+                        return;
                     }
-                    else
-                        MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                else if (realPasswordUser != null)
+            }
+
+            using (SqlConnection connection = new SqlConnection(connString))
+            using (SqlCommand command = new SqlCommand(userSelectQuery, connection))
+            {
+                command.Parameters.AddWithValue("@username", username);
+                command.Parameters.AddWithValue("@password", password);
+                connection.Open();
+                using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    if(enteredPassword == realPasswordUser)
+                    if (reader.HasRows)
                     {
-                        User userForm = new User();
+                        User userForm = new User(username);
                         userForm.Show();
                         this.Hide();
+                        return;
                     }
-                    else
-                        MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    MessageBox.Show("Account doesn't exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+
+            MessageBox.Show("Wrong username or password", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtBoxUsername.Clear();
+            txtBoxPassword.Clear();
+        }
+
         private void Login_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -108,27 +120,48 @@ namespace HouseRentManagement
             }
         }
 
-        private void txtBoxPassword_TextChange(object sender, EventArgs e)
+        private void btnHideShowPass_MouseEnterLeave(object sender, EventArgs e)
         {
-            txtBoxPassword.UseSystemPasswordChar = true;
-        }
-
-        private void btnHideShowPass_Click(object sender, EventArgs e)
-        {
-            if (txtBoxPassword.UseSystemPasswordChar)
+            if (txtBoxPassword.PlaceholderText == "Enter your password" && string.IsNullOrEmpty(txtBoxPassword.Text))
             {
-                txtBoxPassword.UseSystemPasswordChar = false;
+                txtBoxPassword.PasswordChar = '\0';
+                isPasswordMasked = true;
             }
             else
             {
-                txtBoxPassword.UseSystemPasswordChar = true;
+                txtBoxPassword.PasswordChar = isPasswordMasked ? '*' : '\0';
+                isPasswordMasked = !isPasswordMasked;
             }
         }
 
-        private void btnReset_Click(object sender, EventArgs e)
+        private void txtBoxPassword_TextChanged(object sender, EventArgs e)
         {
-            txtBoxUsername.Clear();
-            txtBoxPassword.Clear();
+            if (string.IsNullOrEmpty(txtBoxPassword.Text))
+            {
+                isPasswordMasked = true;
+                txtBoxPassword.PasswordChar = '\0';
+            }
+            else if (isPasswordMasked)
+            {
+                isPasswordMasked = false;
+                txtBoxPassword.PasswordChar = '*';
+            }
+        }
+
+        private void lblLinkForgotPass_Click(object sender, EventArgs e)
+        {
+            string username = txtBoxUsername.Text;
+            ForgotPassword fgpw = new ForgotPassword(username);
+            fgpw.Show();
+            this.Hide();
+        }
+
+        private void txtBoxPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(sender, e);
+            }
         }
     }
 }

@@ -73,6 +73,26 @@ namespace HouseRentManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap appLogo16x16 {
+            get {
+                object obj = ResourceManager.GetObject("appLogo16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnAboutWhite16x16 {
+            get {
+                object obj = ResourceManager.GetObject("btnAboutWhite16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnClose {
             get {
                 object obj = ResourceManager.GetObject("btnClose", resourceCulture);
@@ -86,6 +106,16 @@ namespace HouseRentManagement.Properties {
         internal static System.Drawing.Bitmap btnCondo {
             get {
                 object obj = ResourceManager.GetObject("btnCondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnCondoWhite16x16 {
+            get {
+                object obj = ResourceManager.GetObject("btnCondoWhite16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,6 +183,16 @@ namespace HouseRentManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnHomepageWhite16x16 {
+            get {
+                object obj = ResourceManager.GetObject("btnHomepageWhite16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnLogOut {
             get {
                 object obj = ResourceManager.GetObject("btnLogOut", resourceCulture);
@@ -163,9 +203,39 @@ namespace HouseRentManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnLogoutWhite16x16 {
+            get {
+                object obj = ResourceManager.GetObject("btnLogoutWhite16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnNav16x16 {
+            get {
+                object obj = ResourceManager.GetObject("btnNav16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnPayment {
             get {
                 object obj = ResourceManager.GetObject("btnPayment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnPaymentWhite16x16 {
+            get {
+                object obj = ResourceManager.GetObject("btnPaymentWhite16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +263,29 @@ namespace HouseRentManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnProfileWhite16x16 {
+            get {
+                object obj = ResourceManager.GetObject("btnProfileWhite16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnReceipt {
             get {
                 object obj = ResourceManager.GetObject("btnReceipt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnReceiptWhite16x16 {
+            get {
+                object obj = ResourceManager.GetObject("btnReceiptWhite16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,6 +333,26 @@ namespace HouseRentManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnShowPassword16x16 {
+            get {
+                object obj = ResourceManager.GetObject("btnShowPassword16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnUserWhite16x16 {
+            get {
+                object obj = ResourceManager.GetObject("btnUserWhite16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnVehicleCard {
             get {
                 object obj = ResourceManager.GetObject("btnVehicleCard", resourceCulture);
@@ -253,9 +363,9 @@ namespace HouseRentManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap picBoxCondo {
+        internal static System.Drawing.Bitmap picBoxAltCondo {
             get {
-                object obj = ResourceManager.GetObject("picBoxCondo", resourceCulture);
+                object obj = ResourceManager.GetObject("picBoxAltCondo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +373,9 @@ namespace HouseRentManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap picBoxCondo1 {
+        internal static System.Drawing.Bitmap picBoxCondo {
             get {
-                object obj = ResourceManager.GetObject("picBoxCondo1", resourceCulture);
+                object obj = ResourceManager.GetObject("picBoxCondo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

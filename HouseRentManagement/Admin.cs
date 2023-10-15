@@ -1,21 +1,21 @@
-﻿using DevExpress.XtraEditors;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HouseRentManagement
 {
     public partial class Admin : DevExpress.XtraEditors.XtraForm
     {
-        public Admin()
+        private string username;
+        public Admin(string username)
         {
             InitializeComponent();
+            this.username = username;
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -25,4 +25,5 @@ namespace HouseRentManagement
             this.Hide();
         }
     }
+    
 }

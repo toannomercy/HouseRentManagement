@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConstructionForm));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.btnSend = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.dtpEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.dtpBegin = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.lblFullName = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblEnd = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblBegin = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblContent = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lblCondoID = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtBoxContent = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.txtBoxFullName = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.lblFullName = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblCondoID = new Bunifu.UI.WinForms.BunifuLabel();
+            this.txtResCardID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtBoxCondoID = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.dtpBegin = new System.Windows.Forms.DateTimePicker();
+            this.dtpEnd = new System.Windows.Forms.DateTimePicker();
             this.bunifuShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,17 +62,17 @@
             this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel1.BorderRadius = 1;
             this.bunifuShadowPanel1.BorderThickness = 1;
-            this.bunifuShadowPanel1.Controls.Add(this.btnSend);
-            this.bunifuShadowPanel1.Controls.Add(this.dtpEnd);
             this.bunifuShadowPanel1.Controls.Add(this.dtpBegin);
+            this.bunifuShadowPanel1.Controls.Add(this.dtpEnd);
             this.bunifuShadowPanel1.Controls.Add(this.lblFullName);
+            this.bunifuShadowPanel1.Controls.Add(this.lblCondoID);
+            this.bunifuShadowPanel1.Controls.Add(this.txtResCardID);
+            this.bunifuShadowPanel1.Controls.Add(this.txtBoxCondoID);
+            this.bunifuShadowPanel1.Controls.Add(this.btnSend);
             this.bunifuShadowPanel1.Controls.Add(this.lblEnd);
             this.bunifuShadowPanel1.Controls.Add(this.lblBegin);
             this.bunifuShadowPanel1.Controls.Add(this.lblContent);
-            this.bunifuShadowPanel1.Controls.Add(this.lblCondoID);
             this.bunifuShadowPanel1.Controls.Add(this.txtBoxContent);
-            this.bunifuShadowPanel1.Controls.Add(this.txtBoxFullName);
-            this.bunifuShadowPanel1.Controls.Add(this.txtBoxCondoID);
             this.bunifuShadowPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
@@ -115,56 +115,6 @@
             this.btnSend.TabIndex = 28;
             this.btnSend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
-            // 
-            // dtpEnd
-            // 
-            this.dtpEnd.BackColor = System.Drawing.Color.Transparent;
-            this.dtpEnd.Checked = true;
-            this.dtpEnd.FillColor = System.Drawing.Color.White;
-            this.dtpEnd.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.dtpEnd.ForeColor = System.Drawing.Color.Black;
-            this.dtpEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpEnd.Location = new System.Drawing.Point(305, 279);
-            this.dtpEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpEnd.Name = "dtpEnd";
-            this.dtpEnd.Size = new System.Drawing.Size(200, 40);
-            this.dtpEnd.TabIndex = 26;
-            this.dtpEnd.UseTransparentBackground = true;
-            this.dtpEnd.Value = new System.DateTime(2023, 10, 3, 0, 0, 0, 0);
-            // 
-            // dtpBegin
-            // 
-            this.dtpBegin.BackColor = System.Drawing.Color.Transparent;
-            this.dtpBegin.Checked = true;
-            this.dtpBegin.FillColor = System.Drawing.Color.White;
-            this.dtpBegin.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.dtpBegin.ForeColor = System.Drawing.Color.Black;
-            this.dtpBegin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBegin.Location = new System.Drawing.Point(19, 279);
-            this.dtpBegin.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpBegin.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpBegin.Name = "dtpBegin";
-            this.dtpBegin.Size = new System.Drawing.Size(200, 40);
-            this.dtpBegin.TabIndex = 27;
-            this.dtpBegin.UseTransparentBackground = true;
-            this.dtpBegin.Value = new System.DateTime(2023, 10, 3, 0, 0, 0, 0);
-            // 
-            // lblFullName
-            // 
-            this.lblFullName.AllowParentOverrides = false;
-            this.lblFullName.AutoEllipsis = false;
-            this.lblFullName.CursorType = null;
-            this.lblFullName.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullName.ForeColor = System.Drawing.Color.Black;
-            this.lblFullName.Location = new System.Drawing.Point(273, 24);
-            this.lblFullName.Name = "lblFullName";
-            this.lblFullName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblFullName.Size = new System.Drawing.Size(67, 20);
-            this.lblFullName.TabIndex = 22;
-            this.lblFullName.Text = "Full Name";
-            this.lblFullName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblFullName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // lblEnd
             // 
@@ -215,23 +165,6 @@
             this.lblContent.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblContent.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // lblCondoID
-            // 
-            this.lblCondoID.AllowParentOverrides = false;
-            this.lblCondoID.AutoEllipsis = false;
-            this.lblCondoID.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblCondoID.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblCondoID.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.lblCondoID.ForeColor = System.Drawing.Color.Black;
-            this.lblCondoID.Location = new System.Drawing.Point(19, 24);
-            this.lblCondoID.Name = "lblCondoID";
-            this.lblCondoID.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblCondoID.Size = new System.Drawing.Size(63, 20);
-            this.lblCondoID.TabIndex = 25;
-            this.lblCondoID.Text = "Condo ID";
-            this.lblCondoID.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblCondoID.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // txtBoxContent
             // 
             this.txtBoxContent.AcceptsReturn = false;
@@ -265,26 +198,26 @@
             this.txtBoxContent.Modified = false;
             this.txtBoxContent.Multiline = true;
             this.txtBoxContent.Name = "txtBoxContent";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxContent.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtBoxContent.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxContent.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxContent.OnIdleState = stateProperties4;
+            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBoxContent.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtBoxContent.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBoxContent.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.Silver;
+            stateProperties24.FillColor = System.Drawing.Color.White;
+            stateProperties24.ForeColor = System.Drawing.Color.Empty;
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBoxContent.OnIdleState = stateProperties24;
             this.txtBoxContent.Padding = new System.Windows.Forms.Padding(3);
             this.txtBoxContent.PasswordChar = '\0';
             this.txtBoxContent.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -306,79 +239,112 @@
             this.txtBoxContent.UseSystemPasswordChar = false;
             this.txtBoxContent.WordWrap = false;
             // 
-            // txtBoxFullName
+            // lblFullName
             // 
-            this.txtBoxFullName.AcceptsReturn = false;
-            this.txtBoxFullName.AcceptsTab = false;
-            this.txtBoxFullName.AnimationSpeed = 200;
-            this.txtBoxFullName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtBoxFullName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtBoxFullName.BackColor = System.Drawing.Color.White;
-            this.txtBoxFullName.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBoxFullName.BackgroundImage")));
-            this.txtBoxFullName.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtBoxFullName.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtBoxFullName.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtBoxFullName.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtBoxFullName.BorderRadius = 1;
-            this.txtBoxFullName.BorderThickness = 1;
-            this.txtBoxFullName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtBoxFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxFullName.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtBoxFullName.DefaultText = "";
-            this.txtBoxFullName.FillColor = System.Drawing.Color.White;
-            this.txtBoxFullName.HideSelection = true;
-            this.txtBoxFullName.IconLeft = null;
-            this.txtBoxFullName.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxFullName.IconPadding = 10;
-            this.txtBoxFullName.IconRight = null;
-            this.txtBoxFullName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxFullName.Lines = new string[0];
-            this.txtBoxFullName.Location = new System.Drawing.Point(346, 14);
-            this.txtBoxFullName.MaxLength = 32767;
-            this.txtBoxFullName.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtBoxFullName.Modified = false;
-            this.txtBoxFullName.Multiline = false;
-            this.txtBoxFullName.Name = "txtBoxFullName";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxFullName.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtBoxFullName.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxFullName.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxFullName.OnIdleState = stateProperties8;
-            this.txtBoxFullName.Padding = new System.Windows.Forms.Padding(3);
-            this.txtBoxFullName.PasswordChar = '\0';
-            this.txtBoxFullName.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtBoxFullName.PlaceholderText = "Enter your full name";
-            this.txtBoxFullName.ReadOnly = false;
-            this.txtBoxFullName.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtBoxFullName.SelectedText = "";
-            this.txtBoxFullName.SelectionLength = 0;
-            this.txtBoxFullName.SelectionStart = 0;
-            this.txtBoxFullName.ShortcutsEnabled = true;
-            this.txtBoxFullName.Size = new System.Drawing.Size(159, 41);
-            this.txtBoxFullName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.txtBoxFullName.TabIndex = 20;
-            this.txtBoxFullName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBoxFullName.TextMarginBottom = 0;
-            this.txtBoxFullName.TextMarginLeft = 3;
-            this.txtBoxFullName.TextMarginTop = 0;
-            this.txtBoxFullName.TextPlaceholder = "Enter your full name";
-            this.txtBoxFullName.UseSystemPasswordChar = false;
-            this.txtBoxFullName.WordWrap = true;
+            this.lblFullName.AllowParentOverrides = false;
+            this.lblFullName.AutoEllipsis = false;
+            this.lblFullName.CursorType = null;
+            this.lblFullName.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullName.ForeColor = System.Drawing.Color.Black;
+            this.lblFullName.Location = new System.Drawing.Point(261, 24);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblFullName.Size = new System.Drawing.Size(69, 20);
+            this.lblFullName.TabIndex = 31;
+            this.lblFullName.Text = "ResCardID";
+            this.lblFullName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblFullName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblCondoID
+            // 
+            this.lblCondoID.AllowParentOverrides = false;
+            this.lblCondoID.AutoEllipsis = false;
+            this.lblCondoID.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblCondoID.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblCondoID.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
+            this.lblCondoID.ForeColor = System.Drawing.Color.Black;
+            this.lblCondoID.Location = new System.Drawing.Point(19, 24);
+            this.lblCondoID.Name = "lblCondoID";
+            this.lblCondoID.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblCondoID.Size = new System.Drawing.Size(63, 20);
+            this.lblCondoID.TabIndex = 32;
+            this.lblCondoID.Text = "Condo ID";
+            this.lblCondoID.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblCondoID.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // txtResCardID
+            // 
+            this.txtResCardID.AcceptsReturn = false;
+            this.txtResCardID.AcceptsTab = false;
+            this.txtResCardID.AnimationSpeed = 200;
+            this.txtResCardID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtResCardID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtResCardID.BackColor = System.Drawing.Color.White;
+            this.txtResCardID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtResCardID.BackgroundImage")));
+            this.txtResCardID.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtResCardID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtResCardID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtResCardID.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtResCardID.BorderRadius = 1;
+            this.txtResCardID.BorderThickness = 1;
+            this.txtResCardID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtResCardID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtResCardID.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtResCardID.DefaultText = "";
+            this.txtResCardID.FillColor = System.Drawing.Color.White;
+            this.txtResCardID.HideSelection = true;
+            this.txtResCardID.IconLeft = null;
+            this.txtResCardID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtResCardID.IconPadding = 10;
+            this.txtResCardID.IconRight = null;
+            this.txtResCardID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtResCardID.Lines = new string[0];
+            this.txtResCardID.Location = new System.Drawing.Point(336, 12);
+            this.txtResCardID.MaxLength = 32767;
+            this.txtResCardID.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtResCardID.Modified = false;
+            this.txtResCardID.Multiline = false;
+            this.txtResCardID.Name = "txtResCardID";
+            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtResCardID.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtResCardID.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtResCardID.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.Silver;
+            stateProperties16.FillColor = System.Drawing.Color.White;
+            stateProperties16.ForeColor = System.Drawing.Color.Empty;
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtResCardID.OnIdleState = stateProperties16;
+            this.txtResCardID.Padding = new System.Windows.Forms.Padding(3);
+            this.txtResCardID.PasswordChar = '\0';
+            this.txtResCardID.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtResCardID.PlaceholderText = "Enter Resident CardID";
+            this.txtResCardID.ReadOnly = false;
+            this.txtResCardID.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtResCardID.SelectedText = "";
+            this.txtResCardID.SelectionLength = 0;
+            this.txtResCardID.SelectionStart = 0;
+            this.txtResCardID.ShortcutsEnabled = true;
+            this.txtResCardID.Size = new System.Drawing.Size(170, 41);
+            this.txtResCardID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
+            this.txtResCardID.TabIndex = 29;
+            this.txtResCardID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtResCardID.TextMarginBottom = 0;
+            this.txtResCardID.TextMarginLeft = 3;
+            this.txtResCardID.TextMarginTop = 0;
+            this.txtResCardID.TextPlaceholder = "Enter Resident CardID";
+            this.txtResCardID.UseSystemPasswordChar = false;
+            this.txtResCardID.WordWrap = true;
             // 
             // txtBoxCondoID
             // 
@@ -407,32 +373,32 @@
             this.txtBoxCondoID.IconRight = null;
             this.txtBoxCondoID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxCondoID.Lines = new string[0];
-            this.txtBoxCondoID.Location = new System.Drawing.Point(88, 14);
+            this.txtBoxCondoID.Location = new System.Drawing.Point(88, 12);
             this.txtBoxCondoID.MaxLength = 32767;
             this.txtBoxCondoID.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBoxCondoID.Modified = false;
             this.txtBoxCondoID.Multiline = false;
             this.txtBoxCondoID.Name = "txtBoxCondoID";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxCondoID.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtBoxCondoID.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxCondoID.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxCondoID.OnIdleState = stateProperties12;
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.Empty;
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBoxCondoID.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtBoxCondoID.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBoxCondoID.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.FillColor = System.Drawing.Color.White;
+            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBoxCondoID.OnIdleState = stateProperties20;
             this.txtBoxCondoID.Padding = new System.Windows.Forms.Padding(3);
             this.txtBoxCondoID.PasswordChar = '\0';
             this.txtBoxCondoID.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -445,7 +411,7 @@
             this.txtBoxCondoID.ShortcutsEnabled = true;
             this.txtBoxCondoID.Size = new System.Drawing.Size(159, 41);
             this.txtBoxCondoID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.txtBoxCondoID.TabIndex = 21;
+            this.txtBoxCondoID.TabIndex = 30;
             this.txtBoxCondoID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtBoxCondoID.TextMarginBottom = 0;
             this.txtBoxCondoID.TextMarginLeft = 3;
@@ -453,6 +419,28 @@
             this.txtBoxCondoID.TextPlaceholder = "Enter your condo ID";
             this.txtBoxCondoID.UseSystemPasswordChar = false;
             this.txtBoxCondoID.WordWrap = true;
+            // 
+            // dtpBegin
+            // 
+            this.dtpBegin.CalendarMonthBackground = System.Drawing.SystemColors.WindowFrame;
+            this.dtpBegin.CalendarTitleBackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dtpBegin.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBegin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpBegin.Location = new System.Drawing.Point(18, 288);
+            this.dtpBegin.Name = "dtpBegin";
+            this.dtpBegin.Size = new System.Drawing.Size(200, 32);
+            this.dtpBegin.TabIndex = 34;
+            // 
+            // dtpEnd
+            // 
+            this.dtpEnd.CalendarMonthBackground = System.Drawing.SystemColors.WindowFrame;
+            this.dtpEnd.CalendarTitleBackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dtpEnd.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpEnd.Location = new System.Drawing.Point(305, 288);
+            this.dtpEnd.Name = "dtpEnd";
+            this.dtpEnd.Size = new System.Drawing.Size(200, 32);
+            this.dtpEnd.TabIndex = 35;
             // 
             // ConstructionForm
             // 
@@ -476,15 +464,15 @@
 
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnSend;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpEnd;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpBegin;
-        private Bunifu.UI.WinForms.BunifuLabel lblFullName;
         private Bunifu.UI.WinForms.BunifuLabel lblEnd;
         private Bunifu.UI.WinForms.BunifuLabel lblBegin;
-        private Bunifu.UI.WinForms.BunifuLabel lblCondoID;
         private Bunifu.UI.WinForms.BunifuTextBox txtBoxContent;
-        private Bunifu.UI.WinForms.BunifuTextBox txtBoxFullName;
-        private Bunifu.UI.WinForms.BunifuTextBox txtBoxCondoID;
         private Bunifu.UI.WinForms.BunifuLabel lblContent;
+        private Bunifu.UI.WinForms.BunifuLabel lblFullName;
+        private Bunifu.UI.WinForms.BunifuLabel lblCondoID;
+        private Bunifu.UI.WinForms.BunifuTextBox txtResCardID;
+        private Bunifu.UI.WinForms.BunifuTextBox txtBoxCondoID;
+        private System.Windows.Forms.DateTimePicker dtpBegin;
+        private System.Windows.Forms.DateTimePicker dtpEnd;
     }
 }

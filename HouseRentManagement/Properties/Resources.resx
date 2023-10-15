@@ -118,67 +118,100 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="picBoxCondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\picBoxCondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnExport" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnExport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnPayment" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnPayment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnEmployee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnEmployee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnVehicleCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnVehicleCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="picBoxCondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\picBoxCondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnCondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnCondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnReceipt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnReceipt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnHomepage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnHomepage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnContract" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnContract.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btnProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnReport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnPrice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnPrice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnLogOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnLogOut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnResidentCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnResidentCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="appLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\appLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\btnProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnHidePassword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnHidePassword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\btnHidePassword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnVehicleCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnVehicleCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnCondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnUserWhite16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnUserWhite16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPaymentWhite16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnPaymentWhite16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnExport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnExport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnHomepage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnHomepage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCondoWhite16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnCondoWhite16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnNav16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnNav16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnEmployee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnEmployee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnAboutWhite16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnAboutWhite16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnReport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="appLogo16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appLogo16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picBoxAltCondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picBoxAltCondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPayment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnPayment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="appLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnProfileWhite16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnProfileWhite16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnReceipt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnReceipt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnHomepageWhite16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnHomepageWhite16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnLogoutWhite16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnLogoutWhite16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnLogOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnLogOut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnShowPassword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnShowPassword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\btnShowPassword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\btnSearch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\btnSearch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnReceiptWhite16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnReceiptWhite16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnResidentCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnResidentCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picBoxCondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picBoxCondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPrice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnPrice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnContract" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnContract.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnShowPassword16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnShowPassword16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

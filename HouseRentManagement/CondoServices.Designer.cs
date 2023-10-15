@@ -41,17 +41,11 @@
             this.pnlReportForm = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pnlTransferForm = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pnlConstruction = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtBoxSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnConstructionForm = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnReportForm = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnTransferForm = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dgvCondoServices = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.clhMaCanHo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clhBDChuyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clhKTChuyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clhNgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clhTrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlCondoServices.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCondoServices)).BeginInit();
             this.SuspendLayout();
@@ -67,7 +61,6 @@
             this.pnlCondoServices.Controls.Add(this.pnlReportForm);
             this.pnlCondoServices.Controls.Add(this.pnlTransferForm);
             this.pnlCondoServices.Controls.Add(this.pnlConstruction);
-            this.pnlCondoServices.Controls.Add(this.btnSearch);
             this.pnlCondoServices.Controls.Add(this.txtBoxSearch);
             this.pnlCondoServices.Controls.Add(this.btnConstructionForm);
             this.pnlCondoServices.Controls.Add(this.btnReportForm);
@@ -125,7 +118,6 @@
             this.pnlTransferForm.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlTransferForm.TabIndex = 11;
             this.pnlTransferForm.Visible = false;
-            this.pnlTransferForm.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.pnlTransferForm_ControlAdded);
             // 
             // pnlConstruction
             // 
@@ -150,34 +142,6 @@
             this.pnlConstruction.TabIndex = 11;
             this.pnlConstruction.Visible = false;
             // 
-            // btnSearch
-            // 
-            this.btnSearch.ActiveBorderThickness = 1;
-            this.btnSearch.ActiveCornerRadius = 20;
-            this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(223)))), ((int)(((byte)(22)))));
-            this.btnSearch.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(223)))), ((int)(((byte)(22)))));
-            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearch.ButtonText = "Search";
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnSearch.IdleBorderThickness = 1;
-            this.btnSearch.IdleCornerRadius = 20;
-            this.btnSearch.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
-            this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
-            this.btnSearch.Location = new System.Drawing.Point(608, 13);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(70, 40);
-            this.btnSearch.TabIndex = 29;
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
             // txtBoxSearch
             // 
             this.txtBoxSearch.AcceptsReturn = false;
@@ -195,7 +159,7 @@
             this.txtBoxSearch.BorderThickness = 1;
             this.txtBoxSearch.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxSearch.DefaultFont = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxSearch.DefaultFont = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxSearch.DefaultText = "";
             this.txtBoxSearch.FillColor = System.Drawing.Color.White;
             this.txtBoxSearch.HideSelection = true;
@@ -205,7 +169,7 @@
             this.txtBoxSearch.IconRight = null;
             this.txtBoxSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxSearch.Lines = new string[0];
-            this.txtBoxSearch.Location = new System.Drawing.Point(684, 14);
+            this.txtBoxSearch.Location = new System.Drawing.Point(634, 19);
             this.txtBoxSearch.MaxLength = 32767;
             this.txtBoxSearch.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBoxSearch.Modified = false;
@@ -234,23 +198,24 @@
             this.txtBoxSearch.Padding = new System.Windows.Forms.Padding(3);
             this.txtBoxSearch.PasswordChar = '\0';
             this.txtBoxSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtBoxSearch.PlaceholderText = "Search form";
+            this.txtBoxSearch.PlaceholderText = "Search Form";
             this.txtBoxSearch.ReadOnly = false;
             this.txtBoxSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtBoxSearch.SelectedText = "";
             this.txtBoxSearch.SelectionLength = 0;
             this.txtBoxSearch.SelectionStart = 0;
             this.txtBoxSearch.ShortcutsEnabled = true;
-            this.txtBoxSearch.Size = new System.Drawing.Size(260, 40);
+            this.txtBoxSearch.Size = new System.Drawing.Size(291, 43);
             this.txtBoxSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBoxSearch.TabIndex = 12;
             this.txtBoxSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtBoxSearch.TextMarginBottom = 0;
             this.txtBoxSearch.TextMarginLeft = 3;
             this.txtBoxSearch.TextMarginTop = 0;
-            this.txtBoxSearch.TextPlaceholder = "Search form";
+            this.txtBoxSearch.TextPlaceholder = "Search Form";
             this.txtBoxSearch.UseSystemPasswordChar = false;
             this.txtBoxSearch.WordWrap = true;
+            this.txtBoxSearch.TextChange += new System.EventHandler(this.txtBoxSearch_TextChange);
             // 
             // btnConstructionForm
             // 
@@ -342,19 +307,14 @@
             this.dgvCondoServices.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(125)))), ((int)(((byte)(122)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 7.8F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(162)))), ((int)(((byte)(158)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCondoServices.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCondoServices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCondoServices.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clhMaCanHo,
-            this.clhBDChuyen,
-            this.clhKTChuyen,
-            this.clhNgayLap,
-            this.clhTrangThai});
+            this.dgvCondoServices.ColumnHeadersHeight = 42;
+            this.dgvCondoServices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 7.8F);
@@ -364,12 +324,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCondoServices.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCondoServices.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvCondoServices.Location = new System.Drawing.Point(14, 151);
+            this.dgvCondoServices.Location = new System.Drawing.Point(24, 151);
             this.dgvCondoServices.Name = "dgvCondoServices";
             this.dgvCondoServices.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 7.8F);
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
@@ -378,7 +338,7 @@
             this.dgvCondoServices.RowHeadersVisible = false;
             this.dgvCondoServices.RowHeadersWidth = 51;
             this.dgvCondoServices.RowTemplate.Height = 24;
-            this.dgvCondoServices.Size = new System.Drawing.Size(931, 450);
+            this.dgvCondoServices.Size = new System.Drawing.Size(920, 450);
             this.dgvCondoServices.TabIndex = 30;
             this.dgvCondoServices.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvCondoServices.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -391,7 +351,7 @@
             this.dgvCondoServices.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.dgvCondoServices.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvCondoServices.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvCondoServices.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCondoServices.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvCondoServices.ThemeStyle.HeaderStyle.Height = 42;
             this.dgvCondoServices.ThemeStyle.ReadOnly = true;
             this.dgvCondoServices.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -401,41 +361,6 @@
             this.dgvCondoServices.ThemeStyle.RowsStyle.Height = 24;
             this.dgvCondoServices.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvCondoServices.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // clhMaCanHo
-            // 
-            this.clhMaCanHo.HeaderText = "CondoID";
-            this.clhMaCanHo.MinimumWidth = 6;
-            this.clhMaCanHo.Name = "clhMaCanHo";
-            this.clhMaCanHo.ReadOnly = true;
-            // 
-            // clhBDChuyen
-            // 
-            this.clhBDChuyen.HeaderText = "Start Date";
-            this.clhBDChuyen.MinimumWidth = 6;
-            this.clhBDChuyen.Name = "clhBDChuyen";
-            this.clhBDChuyen.ReadOnly = true;
-            // 
-            // clhKTChuyen
-            // 
-            this.clhKTChuyen.HeaderText = "End Date";
-            this.clhKTChuyen.MinimumWidth = 6;
-            this.clhKTChuyen.Name = "clhKTChuyen";
-            this.clhKTChuyen.ReadOnly = true;
-            // 
-            // clhNgayLap
-            // 
-            this.clhNgayLap.HeaderText = "Date";
-            this.clhNgayLap.MinimumWidth = 6;
-            this.clhNgayLap.Name = "clhNgayLap";
-            this.clhNgayLap.ReadOnly = true;
-            // 
-            // clhTrangThai
-            // 
-            this.clhTrangThai.HeaderText = "Form Status";
-            this.clhTrangThai.MinimumWidth = 6;
-            this.clhTrangThai.Name = "clhTrangThai";
-            this.clhTrangThai.ReadOnly = true;
             // 
             // CondoServices
             // 
@@ -449,6 +374,7 @@
             this.IconOptions.Image = global::HouseRentManagement.Properties.Resources.appLogo;
             this.Name = "CondoServices";
             this.Text = "Condo Services";
+            this.Load += new System.EventHandler(this.CondoServices_Load);
             this.pnlCondoServices.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCondoServices)).EndInit();
             this.ResumeLayout(false);
@@ -465,12 +391,6 @@
         private Bunifu.UI.WinForms.BunifuShadowPanel pnlTransferForm;
         private Bunifu.UI.WinForms.BunifuShadowPanel pnlReportForm;
         private Bunifu.UI.WinForms.BunifuTextBox txtBoxSearch;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
         private Guna.UI2.WinForms.Guna2DataGridView dgvCondoServices;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clhMaCanHo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clhBDChuyen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clhKTChuyen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clhNgayLap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clhTrangThai;
     }
 }
