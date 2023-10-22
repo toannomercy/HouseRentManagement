@@ -70,7 +70,7 @@ namespace HouseRentManagement
                 var user = context.USERS.FirstOrDefault(u => u.MaTheCuDan == username);
                 if (!rg.IsMatch(newPass) || !rg.IsMatch(comPass))
                 {
-                    MessageBox.Show("Password must be between 8-22 characters and have at least 1 number", "Notice", MessageBoxButtons.OK);
+                    MessageBox.Show("Password must be between 8-16 characters and have at least 1 number", "Notice", MessageBoxButtons.OK);
                     return;
                 }
                 if (txtEditConfirmPassword.Text != txtNewPassword.Text)
@@ -160,7 +160,7 @@ namespace HouseRentManagement
         }
         private void btnHideShowPass1_MouseEnterLeave(object sender, EventArgs e)
         {
-            if (txtNewPassword.PlaceholderText == "8-22 characters and least 1 number" &&
+            if (txtNewPassword.PlaceholderText == "8-16 characters and least 1 number" &&
                 string.IsNullOrEmpty(txtNewPassword.Text))
             {
                 txtNewPassword.PasswordChar = '\0';

@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VehicleCard));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VehicleCard));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -50,16 +50,9 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.clnHetHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnLoaiCoGioi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnTenXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnMaTheXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnMaTheCuDan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnSoHuuXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtBoxSearch = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.clnBienSoXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnNgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bnfVehicleCard = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.bnfUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtBoxSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtMaTheXe = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.cbbMaTheCuDan = new System.Windows.Forms.ComboBox();
@@ -74,10 +67,17 @@
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.gunadatapickerHSD = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifu = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bnfVehicleCard = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifu = new Bunifu.UI.WinForms.BunifuLabel();
             this.dgvVehicle = new System.Windows.Forms.DataGridView();
+            this.clnBienSoXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnSoHuuXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnMaTheCuDan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnMaTheXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnTenXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnLoaiCoGioi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnNgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnHetHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelContainer.SuspendLayout();
             this.bnfVehicleCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVehicle)).BeginInit();
@@ -93,54 +93,67 @@
             this.panelContainer.Size = new System.Drawing.Size(958, 571);
             this.panelContainer.TabIndex = 0;
             // 
-            // clnHetHan
+            // bnfVehicleCard
             // 
-            this.clnHetHan.HeaderText = "Expired Date";
-            this.clnHetHan.MinimumWidth = 6;
-            this.clnHetHan.Name = "clnHetHan";
-            this.clnHetHan.ReadOnly = true;
-            this.clnHetHan.Width = 125;
+            this.bnfVehicleCard.BorderColor = System.Drawing.Color.LightGray;
+            this.bnfVehicleCard.BorderRadius = 1;
+            this.bnfVehicleCard.BorderThickness = 1;
+            this.bnfVehicleCard.Controls.Add(this.bnfUpdate);
+            this.bnfVehicleCard.Controls.Add(this.txtBoxSearch);
+            this.bnfVehicleCard.Controls.Add(this.txtMaTheXe);
+            this.bnfVehicleCard.Controls.Add(this.bunifuLabel1);
+            this.bnfVehicleCard.Controls.Add(this.cbbMaTheCuDan);
+            this.bnfVehicleCard.Controls.Add(this.cbbLoaiCoGioi);
+            this.bnfVehicleCard.Controls.Add(this.bnfInsert);
+            this.bnfVehicleCard.Controls.Add(this.dtpNgayLap);
+            this.bnfVehicleCard.Controls.Add(this.bnfDelete);
+            this.bnfVehicleCard.Controls.Add(this.txtHSD);
+            this.bnfVehicleCard.Controls.Add(this.txtTenXe);
+            this.bnfVehicleCard.Controls.Add(this.txtBienSoXe);
+            this.bnfVehicleCard.Controls.Add(this.bunifuLabel5);
+            this.bnfVehicleCard.Controls.Add(this.bunifuLabel4);
+            this.bnfVehicleCard.Controls.Add(this.gunadatapickerHSD);
+            this.bnfVehicleCard.Controls.Add(this.bunifuLabel7);
+            this.bnfVehicleCard.Controls.Add(this.bunifuLabel3);
+            this.bnfVehicleCard.Controls.Add(this.bunifu);
+            this.bnfVehicleCard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bnfVehicleCard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bnfVehicleCard.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bnfVehicleCard.LabelIndent = 10;
+            this.bnfVehicleCard.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
+            this.bnfVehicleCard.Location = new System.Drawing.Point(0, 0);
+            this.bnfVehicleCard.Name = "bnfVehicleCard";
+            this.bnfVehicleCard.Size = new System.Drawing.Size(958, 262);
+            this.bnfVehicleCard.TabIndex = 41;
+            this.bnfVehicleCard.TabStop = false;
+            this.bnfVehicleCard.Text = "Vehicle Card Information";
             // 
-            // clnLoaiCoGioi
+            // bnfUpdate
             // 
-            this.clnLoaiCoGioi.HeaderText = "Vehicle Type";
-            this.clnLoaiCoGioi.MinimumWidth = 6;
-            this.clnLoaiCoGioi.Name = "clnLoaiCoGioi";
-            this.clnLoaiCoGioi.ReadOnly = true;
-            this.clnLoaiCoGioi.Width = 125;
-            // 
-            // clnTenXe
-            // 
-            this.clnTenXe.HeaderText = "Vehicle Name";
-            this.clnTenXe.MinimumWidth = 6;
-            this.clnTenXe.Name = "clnTenXe";
-            this.clnTenXe.ReadOnly = true;
-            this.clnTenXe.Width = 125;
-            // 
-            // clnMaTheXe
-            // 
-            this.clnMaTheXe.HeaderText = "Vehicle Card ID";
-            this.clnMaTheXe.MinimumWidth = 6;
-            this.clnMaTheXe.Name = "clnMaTheXe";
-            this.clnMaTheXe.ReadOnly = true;
-            this.clnMaTheXe.Width = 125;
-            // 
-            // clnMaTheCuDan
-            // 
-            this.clnMaTheCuDan.HeaderText = "Resident Card ID";
-            this.clnMaTheCuDan.MinimumWidth = 6;
-            this.clnMaTheCuDan.Name = "clnMaTheCuDan";
-            this.clnMaTheCuDan.ReadOnly = true;
-            this.clnMaTheCuDan.Width = 125;
-            // 
-            // clnSoHuuXe
-            // 
-            this.clnSoHuuXe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.clnSoHuuXe.HeaderText = "Vehicle Owner";
-            this.clnSoHuuXe.MinimumWidth = 6;
-            this.clnSoHuuXe.Name = "clnSoHuuXe";
-            this.clnSoHuuXe.ReadOnly = true;
-            this.clnSoHuuXe.Width = 110;
+            this.bnfUpdate.ActiveBorderThickness = 1;
+            this.bnfUpdate.ActiveCornerRadius = 20;
+            this.bnfUpdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bnfUpdate.ActiveForecolor = System.Drawing.Color.OldLace;
+            this.bnfUpdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bnfUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bnfUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.bnfUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bnfUpdate.BackgroundImage")));
+            this.bnfUpdate.ButtonText = "UPDATE";
+            this.bnfUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bnfUpdate.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnfUpdate.ForeColor = System.Drawing.Color.Transparent;
+            this.bnfUpdate.IdleBorderThickness = 1;
+            this.bnfUpdate.IdleCornerRadius = 20;
+            this.bnfUpdate.IdleFillColor = System.Drawing.Color.Olive;
+            this.bnfUpdate.IdleForecolor = System.Drawing.Color.White;
+            this.bnfUpdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
+            this.bnfUpdate.Location = new System.Drawing.Point(741, 155);
+            this.bnfUpdate.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.bnfUpdate.Name = "bnfUpdate";
+            this.bnfUpdate.Size = new System.Drawing.Size(92, 47);
+            this.bnfUpdate.TabIndex = 51;
+            this.bnfUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bnfUpdate.Click += new System.EventHandler(this.bnfUpdate_Click_1);
             // 
             // txtBoxSearch
             // 
@@ -215,49 +228,7 @@
             this.txtBoxSearch.TextPlaceholder = "Search Vehicle Card";
             this.txtBoxSearch.UseSystemPasswordChar = false;
             this.txtBoxSearch.WordWrap = true;
-            // 
-            // clnBienSoXe
-            // 
-            this.clnBienSoXe.HeaderText = "License Plate Number";
-            this.clnBienSoXe.MinimumWidth = 6;
-            this.clnBienSoXe.Name = "clnBienSoXe";
-            this.clnBienSoXe.ReadOnly = true;
-            this.clnBienSoXe.Width = 125;
-            // 
-            // clnNgayLap
-            // 
-            this.clnNgayLap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.clnNgayLap.HeaderText = "Create Date";
-            this.clnNgayLap.MinimumWidth = 6;
-            this.clnNgayLap.Name = "clnNgayLap";
-            this.clnNgayLap.ReadOnly = true;
-            this.clnNgayLap.Width = 96;
-            // 
-            // bnfUpdate
-            // 
-            this.bnfUpdate.ActiveBorderThickness = 1;
-            this.bnfUpdate.ActiveCornerRadius = 20;
-            this.bnfUpdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.bnfUpdate.ActiveForecolor = System.Drawing.Color.OldLace;
-            this.bnfUpdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.bnfUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bnfUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.bnfUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bnfUpdate.BackgroundImage")));
-            this.bnfUpdate.ButtonText = "UPDATE";
-            this.bnfUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bnfUpdate.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnfUpdate.ForeColor = System.Drawing.Color.Transparent;
-            this.bnfUpdate.IdleBorderThickness = 1;
-            this.bnfUpdate.IdleCornerRadius = 20;
-            this.bnfUpdate.IdleFillColor = System.Drawing.Color.Olive;
-            this.bnfUpdate.IdleForecolor = System.Drawing.Color.White;
-            this.bnfUpdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
-            this.bnfUpdate.Location = new System.Drawing.Point(741, 155);
-            this.bnfUpdate.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.bnfUpdate.Name = "bnfUpdate";
-            this.bnfUpdate.Size = new System.Drawing.Size(92, 47);
-            this.bnfUpdate.TabIndex = 51;
-            this.bnfUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtBoxSearch.TextChange += new System.EventHandler(this.txtBoxSearch_TextChange_1);
             // 
             // txtMaTheXe
             // 
@@ -339,7 +310,7 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(63, 124);
+            this.bunifuLabel1.Location = new System.Drawing.Point(70, 124);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(118, 23);
@@ -391,6 +362,7 @@
             this.bnfInsert.Size = new System.Drawing.Size(92, 47);
             this.bnfInsert.TabIndex = 42;
             this.bnfInsert.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bnfInsert.Click += new System.EventHandler(this.bnfInsert_Click);
             // 
             // dtpNgayLap
             // 
@@ -426,6 +398,7 @@
             this.bnfDelete.Size = new System.Drawing.Size(92, 47);
             this.bnfDelete.TabIndex = 41;
             this.bnfDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bnfDelete.Click += new System.EventHandler(this.bnfDelete_Click_1);
             // 
             // txtHSD
             // 
@@ -709,6 +682,21 @@
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // bunifuLabel3
+            // 
+            this.bunifuLabel3.AllowParentOverrides = false;
+            this.bunifuLabel3.AutoEllipsis = false;
+            this.bunifuLabel3.CursorType = null;
+            this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bunifuLabel3.Location = new System.Drawing.Point(75, 177);
+            this.bunifuLabel3.Name = "bunifuLabel3";
+            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel3.Size = new System.Drawing.Size(106, 23);
+            this.bunifuLabel3.TabIndex = 1;
+            this.bunifuLabel3.Text = "Vehicle  Name";
+            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // bunifu
             // 
             this.bunifu.AllowParentOverrides = false;
@@ -724,56 +712,6 @@
             this.bunifu.Text = "License Plate Number";
             this.bunifu.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifu.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bnfVehicleCard
-            // 
-            this.bnfVehicleCard.BorderColor = System.Drawing.Color.LightGray;
-            this.bnfVehicleCard.BorderRadius = 1;
-            this.bnfVehicleCard.BorderThickness = 1;
-            this.bnfVehicleCard.Controls.Add(this.bnfUpdate);
-            this.bnfVehicleCard.Controls.Add(this.txtBoxSearch);
-            this.bnfVehicleCard.Controls.Add(this.txtMaTheXe);
-            this.bnfVehicleCard.Controls.Add(this.bunifuLabel1);
-            this.bnfVehicleCard.Controls.Add(this.cbbMaTheCuDan);
-            this.bnfVehicleCard.Controls.Add(this.cbbLoaiCoGioi);
-            this.bnfVehicleCard.Controls.Add(this.bnfInsert);
-            this.bnfVehicleCard.Controls.Add(this.dtpNgayLap);
-            this.bnfVehicleCard.Controls.Add(this.bnfDelete);
-            this.bnfVehicleCard.Controls.Add(this.txtHSD);
-            this.bnfVehicleCard.Controls.Add(this.txtTenXe);
-            this.bnfVehicleCard.Controls.Add(this.txtBienSoXe);
-            this.bnfVehicleCard.Controls.Add(this.bunifuLabel5);
-            this.bnfVehicleCard.Controls.Add(this.bunifuLabel4);
-            this.bnfVehicleCard.Controls.Add(this.gunadatapickerHSD);
-            this.bnfVehicleCard.Controls.Add(this.bunifuLabel7);
-            this.bnfVehicleCard.Controls.Add(this.bunifuLabel3);
-            this.bnfVehicleCard.Controls.Add(this.bunifu);
-            this.bnfVehicleCard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bnfVehicleCard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bnfVehicleCard.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bnfVehicleCard.LabelIndent = 10;
-            this.bnfVehicleCard.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bnfVehicleCard.Location = new System.Drawing.Point(0, 0);
-            this.bnfVehicleCard.Name = "bnfVehicleCard";
-            this.bnfVehicleCard.Size = new System.Drawing.Size(958, 262);
-            this.bnfVehicleCard.TabIndex = 41;
-            this.bnfVehicleCard.TabStop = false;
-            this.bnfVehicleCard.Text = "Vehicle Card Information";
-            // 
-            // bunifuLabel3
-            // 
-            this.bunifuLabel3.AllowParentOverrides = false;
-            this.bunifuLabel3.AutoEllipsis = false;
-            this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bunifuLabel3.Location = new System.Drawing.Point(75, 177);
-            this.bunifuLabel3.Name = "bunifuLabel3";
-            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(106, 23);
-            this.bunifuLabel3.TabIndex = 1;
-            this.bunifuLabel3.Text = "Vehicle  Name";
-            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // dgvVehicle
             // 
@@ -798,6 +736,73 @@
             this.dgvVehicle.RowTemplate.Height = 24;
             this.dgvVehicle.Size = new System.Drawing.Size(958, 309);
             this.dgvVehicle.TabIndex = 42;
+            this.dgvVehicle.SelectionChanged += new System.EventHandler(this.dgvVehicle_SelectionChanged_1);
+            // 
+            // clnBienSoXe
+            // 
+            this.clnBienSoXe.HeaderText = "License Plate Number";
+            this.clnBienSoXe.MinimumWidth = 6;
+            this.clnBienSoXe.Name = "clnBienSoXe";
+            this.clnBienSoXe.ReadOnly = true;
+            this.clnBienSoXe.Width = 125;
+            // 
+            // clnSoHuuXe
+            // 
+            this.clnSoHuuXe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.clnSoHuuXe.HeaderText = "Vehicle Owner";
+            this.clnSoHuuXe.MinimumWidth = 6;
+            this.clnSoHuuXe.Name = "clnSoHuuXe";
+            this.clnSoHuuXe.ReadOnly = true;
+            this.clnSoHuuXe.Width = 110;
+            // 
+            // clnMaTheCuDan
+            // 
+            this.clnMaTheCuDan.HeaderText = "Resident Card ID";
+            this.clnMaTheCuDan.MinimumWidth = 6;
+            this.clnMaTheCuDan.Name = "clnMaTheCuDan";
+            this.clnMaTheCuDan.ReadOnly = true;
+            this.clnMaTheCuDan.Width = 125;
+            // 
+            // clnMaTheXe
+            // 
+            this.clnMaTheXe.HeaderText = "Vehicle Card ID";
+            this.clnMaTheXe.MinimumWidth = 6;
+            this.clnMaTheXe.Name = "clnMaTheXe";
+            this.clnMaTheXe.ReadOnly = true;
+            this.clnMaTheXe.Width = 125;
+            // 
+            // clnTenXe
+            // 
+            this.clnTenXe.HeaderText = "Vehicle Name";
+            this.clnTenXe.MinimumWidth = 6;
+            this.clnTenXe.Name = "clnTenXe";
+            this.clnTenXe.ReadOnly = true;
+            this.clnTenXe.Width = 125;
+            // 
+            // clnLoaiCoGioi
+            // 
+            this.clnLoaiCoGioi.HeaderText = "Vehicle Type";
+            this.clnLoaiCoGioi.MinimumWidth = 6;
+            this.clnLoaiCoGioi.Name = "clnLoaiCoGioi";
+            this.clnLoaiCoGioi.ReadOnly = true;
+            this.clnLoaiCoGioi.Width = 125;
+            // 
+            // clnNgayLap
+            // 
+            this.clnNgayLap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.clnNgayLap.HeaderText = "Create Date";
+            this.clnNgayLap.MinimumWidth = 6;
+            this.clnNgayLap.Name = "clnNgayLap";
+            this.clnNgayLap.ReadOnly = true;
+            this.clnNgayLap.Width = 96;
+            // 
+            // clnHetHan
+            // 
+            this.clnHetHan.HeaderText = "Expired Date";
+            this.clnHetHan.MinimumWidth = 6;
+            this.clnHetHan.Name = "clnHetHan";
+            this.clnHetHan.ReadOnly = true;
+            this.clnHetHan.Width = 125;
             // 
             // VehicleCard
             // 

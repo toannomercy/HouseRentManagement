@@ -281,7 +281,7 @@
             this.txtNewPassword.Padding = new System.Windows.Forms.Padding(3);
             this.txtNewPassword.PasswordChar = '\0';
             this.txtNewPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtNewPassword.PlaceholderText = "8-22 characters and least 1 number";
+            this.txtNewPassword.PlaceholderText = "8-16 characters and least 1 number";
             this.txtNewPassword.ReadOnly = false;
             this.txtNewPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtNewPassword.SelectedText = "";
@@ -295,7 +295,7 @@
             this.txtNewPassword.TextMarginBottom = 0;
             this.txtNewPassword.TextMarginLeft = 3;
             this.txtNewPassword.TextMarginTop = 0;
-            this.txtNewPassword.TextPlaceholder = "8-22 characters and least 1 number";
+            this.txtNewPassword.TextPlaceholder = "8-16 characters and least 1 number";
             this.txtNewPassword.UseSystemPasswordChar = false;
             this.txtNewPassword.WordWrap = true;
             this.txtNewPassword.TextChange += new System.EventHandler(this.txtNewPassword_TextChanged);

@@ -23,6 +23,8 @@ namespace HouseRentManagement
         public Tenant()
         {
             InitializeComponent();
+            rbMale.Checked = true;
+
         }
         private ChildFormManager formManager = new ChildFormManager();
 
@@ -150,6 +152,7 @@ namespace HouseRentManagement
             txtTenantEmail.Clear();
             txtTenantIdentify.Clear();
             txtTenantID.Clear();
+            rbMale.Checked = true;
         }
         private bool CheckNull()
         {

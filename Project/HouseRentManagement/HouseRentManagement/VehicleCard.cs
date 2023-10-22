@@ -140,7 +140,27 @@ namespace HouseRentManagement
             }
         }
 
-        private void dgvVehicle_SelectionChanged(object sender, EventArgs e)
+
+
+        private void LoaddgvXe()
+        {
+            List<XE> listXe = context.XEs.ToList();
+            List<THEXE> listTheXe = context.THEXEs.ToList();
+            bindData();
+        }
+        private void LoadForm()
+        {
+            txtBienSoXe.Clear();
+            txtTenXe.Clear();
+            txtHSD.Clear();
+            txtMaTheXe.Clear();
+        }
+
+
+
+
+
+        private void dgvVehicle_SelectionChanged_1(object sender, EventArgs e)
         {
             if (dgvVehicle.SelectedRows.Count > 0)
             {
@@ -156,7 +176,7 @@ namespace HouseRentManagement
             }
         }
 
-        private void txtBoxSearch_TextChange(object sender, EventArgs e)
+        private void txtBoxSearch_TextChange_1(object sender, EventArgs e)
         {
             string searchTerm = txtBoxSearch.Text.Trim();
 
@@ -205,61 +225,50 @@ namespace HouseRentManagement
                 }
             }
         }
-        private void LoaddgvXe()
+
+        private void bnfDelete_Click_1(object sender, EventArgs e)
         {
-            List<XE> listXe = context.XEs.ToList();
-            List<THEXE> listTheXe = context.THEXEs.ToList();
-            bindData();
-        }
-        private void LoadForm()
-        {
-            txtBienSoXe.Clear();
-            txtTenXe.Clear();
-            txtHSD.Clear();
-            txtMaTheXe.Clear();
-        }
-        private void btnInsert_Click(object sender, EventArgs e)
-        {
-            if (CheckNull())
+            try
             {
-                if (CheckBienSoXe(txtBienSoXe.Text) == -1) // -1 để là biển số xe mới
+                string deletedBienSoXe = txtBienSoXe.Text;
+
+                // Find the vehicle to delete
+                XE deleteXe = context.XEs.FirstOrDefault(xe => xe.BienSo == deletedBienSoXe);
+
+                if (deleteXe != null)
                 {
-                    XE newXe = new XE();
-                    THEXE newTheXe = new THEXE();
+                    // Find the corresponding card
+                    THEXE deleteTheXe = context.THEXEs.FirstOrDefault(t => t.MaTheXe == deleteXe.MaTheXe);
 
-                    newTheXe.NgayLap = DateTime.Now;
-                    newTheXe.HSD = Convert.ToInt32(txtHSD.Text);
-                    // Lấy giá trị MaTheCuDan từ ComboBox
-                    newTheXe.MaTheCuDan = cbbMaTheCuDan.SelectedItem.ToString();
-                    newTheXe.MaTheXe = txtMaTheXe.Text;
+                    // Delete the vehicle
+                    context.XEs.Remove(deleteXe);
 
-                    context.THEXEs.AddOrUpdate(newTheXe);
+                    // If the card exists, delete the card
+                    if (deleteTheXe != null)
+                    {
+                        context.THEXEs.Remove(deleteTheXe);
+                    }
+
                     context.SaveChanges();
 
-                    newXe.BienSo = txtBienSoXe.Text;
-                    newXe.TenXe = txtTenXe.Text;
-                    newXe.LoaiCoGioi = cbbLoaiCoGioi.SelectedItem.ToString();
-                    newXe.MaTheXe = newTheXe.MaTheXe;
-                    context.XEs.AddOrUpdate(newXe);
-                    context.SaveChanges();
-
-
-
+                    // Update the DataGridView and clear input controls
                     LoaddgvXe();
                     LoadForm();
 
-                    MessageBox.Show($"Add {newXe.TenXe} completed!",
-                         "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Successfully deleted the vehicle with license plate {deletedBienSoXe}!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show($"Car's {txtBienSoXe.Text} is existed!", "Thông báo",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Cannot find the vehicle with license plate {deletedBienSoXe} to delete!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while deleting the vehicle: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void bnfUpdate_Click(object sender, EventArgs e)
+        private void bnfUpdate_Click_1(object sender, EventArgs e)
         {
             if (CheckNull())
             {
@@ -306,47 +315,45 @@ namespace HouseRentManagement
             }
         }
 
-        private void bnfDelete_Click(object sender, EventArgs e)
+        private void bnfInsert_Click(object sender, EventArgs e)
         {
-            try
+            if (CheckNull())
             {
-                string deletedBienSoXe = txtBienSoXe.Text;
-
-                // Find the vehicle to delete
-                XE deleteXe = context.XEs.FirstOrDefault(xe => xe.BienSo == deletedBienSoXe);
-
-                if (deleteXe != null)
+                if (CheckBienSoXe(txtBienSoXe.Text) == -1) // -1 để là biển số xe mới
                 {
-                    // Find the corresponding card
-                    THEXE deleteTheXe = context.THEXEs.FirstOrDefault(t => t.MaTheXe == deleteXe.MaTheXe);
+                    XE newXe = new XE();
+                    THEXE newTheXe = new THEXE();
 
-                    // Delete the vehicle
-                    context.XEs.Remove(deleteXe);
+                    newTheXe.NgayLap = DateTime.Now;
+                    newTheXe.HSD = Convert.ToInt32(txtHSD.Text);
+                    // Lấy giá trị MaTheCuDan từ ComboBox
+                    newTheXe.MaTheCuDan = cbbMaTheCuDan.SelectedItem.ToString();
+                    newTheXe.MaTheXe = txtMaTheXe.Text;
 
-                    // If the card exists, delete the card
-                    if (deleteTheXe != null)
-                    {
-                        context.THEXEs.Remove(deleteTheXe);
-                    }
-
+                    context.THEXEs.AddOrUpdate(newTheXe);
                     context.SaveChanges();
 
-                    // Update the DataGridView and clear input controls
+                    newXe.BienSo = txtBienSoXe.Text;
+                    newXe.TenXe = txtTenXe.Text;
+                    newXe.LoaiCoGioi = cbbLoaiCoGioi.SelectedItem.ToString();
+                    newXe.MaTheXe = newTheXe.MaTheXe;
+                    context.XEs.AddOrUpdate(newXe);
+                    context.SaveChanges();
+
+
+
                     LoaddgvXe();
                     LoadForm();
 
-                    MessageBox.Show($"Successfully deleted the vehicle with license plate {deletedBienSoXe}!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Add {newXe.TenXe} completed!",
+                         "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show($"Cannot find the vehicle with license plate {deletedBienSoXe} to delete!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show($"Car's {txtBienSoXe.Text} is existed!", "Thông báo",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred while deleting the vehicle: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
-
     }
 }

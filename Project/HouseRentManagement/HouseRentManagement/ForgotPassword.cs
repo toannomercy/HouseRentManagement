@@ -246,9 +246,31 @@ namespace HouseRentManagement
         }
         private async void btnGetOTP_Click(object sender, EventArgs e)
         {
+               
             if (txtBoxEmail.Text.Contains("@") && !txtBoxEmail.Text.EndsWith(".") && IsValidEmail(txtBoxEmail.Text))
             {
-                string username = ""; // You need to provide the value for the username variable
+                string username = txtBoxUsername.Text; // You need to provide the value for the username variable
+
+                // Kiểm tra email trùng với username
+                using (SqlConnection connection = new SqlConnection(connString))
+                {
+                    connection.Open();
+
+                    string query = @"SELECT COUNT(*) FROM NGUOITHUE nt
+             INNER JOIN THECUDAN tc ON nt.MaNguoiThue = tc.MaNguoiThue
+             WHERE tc.MaTheCuDan = @username and nt.email = @email";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@username", username);
+                    command.Parameters.AddWithValue("@email", txtBoxEmail.Text);
+
+                    int count = (int)command.ExecuteScalar();
+
+                    if (count == 0)
+                    {
+                        MessageBox.Show("Username and email do not match ", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
 
                 if (checkMail(txtBoxEmail.Text))
                 {
